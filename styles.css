@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #0d0d0d;
+    background: #f4f4f42a;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #0c3448, #1f1860);
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff7e5f;
+}
+
+header h1 {
+    float: left;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+#intro {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#intro h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#intro .wave {
+    animation: wave-animation 2s infinite;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-20deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+social-icons a:hover {
+    color: #ff7e5f;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+.buttons .btn:hover {
+    background: #ff7e5f;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 8px;
+}
+
+footer {
+    background: #0c3448;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
